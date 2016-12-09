@@ -24,6 +24,16 @@ $this->params['breadcrumbs'][] ='รายงาน 2';
     ]);
     ?>
     
+    <?php
+    $list = ['1'=>'A','2'=>'B'];
+     echo yii\helpers\Html::dropDownList('hospcode','', $list, [
+                'prompt' => 'เลือกสถานบริการ',
+               
+            ]);
+    
+    
+    ?>
+    
      ให้บริการระหว่าง:
         <?php
         echo yii\jui\DatePicker::widget([
