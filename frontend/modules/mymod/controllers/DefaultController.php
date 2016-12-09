@@ -2,9 +2,9 @@
 
 namespace frontend\modules\mymod\controllers;
 
-use yii\web\Controller;
+use common\components\AppController;
 
-class DefaultController extends Controller
+class DefaultController extends AppController
 {
     public function actionIndex()
     {
@@ -13,7 +13,8 @@ class DefaultController extends Controller
     
      public function actionReport1()
     {
-       
+         $this->permitRole([1,2,3]);
+         
        $sql = " select name as 'ชื่อ',lname from person limit 100";
        $raw = \Yii::$app->db->createCommand($sql)->queryAll();
        
@@ -28,6 +29,7 @@ class DefaultController extends Controller
     }
     
     public function actionReport2($date1='0001-01-01',$date2='3000-12-31'){
+        
         $sql = " 
 SELECT 
 h.hoscode ,h.hosname 

@@ -5660,3 +5660,239 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1481254170.806
     'REQUEST_TIME' => 1481254170
 ]
+2016-12-09 06:46:39 [::1][-][csqp0m17v1nmctoqd5kuoesbu0][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'ไม่ได้รับอนุญาต' in D:\xampp\htdocs\dhdc2\common\components\AppController.php:50
+Stack trace:
+#0 D:\xampp\htdocs\dhdc2\frontend\modules\mymod\controllers\DefaultController.php(16): common\components\AppController->permitRole(Array)
+#1 [internal function]: frontend\modules\mymod\controllers\DefaultController->actionReport1()
+#2 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('report1', Array)
+#5 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('mymod/default/r...', Array)
+#6 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\dhdc2\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-12-09 06:46:39 [::1][-][csqp0m17v1nmctoqd5kuoesbu0][info][application] $_GET = [
+    'r' => 'mymod/default/report1'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1994098876.1441696924'
+    'HstCfa3456534' => '1463643891251'
+    'HstCmu3456534' => '1463643891251'
+    'HstCla3456534' => '1464714323434'
+    'HstPn3456534' => '19'
+    'HstPt3456534' => '254'
+    'HstCnv3456534' => '4'
+    'HstCns3456534' => '5'
+    '_locale' => '60ae3f0abd5e5683db2df8e9156d4f5c6f45d5d6a6591a35bb6aa86ab75f7305a:2:{i:0;s:7:\"_locale\";i:1;s:5:\"en-US\";}'
+    '_csrf' => 'b994249c5c034b6b7671cafb2fe622ca7a5d301afdac6199514472fbdc609eaea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KOBReZv6O6eceaRvpe8tQaPoHrCP8-Dt\";}'
+    'PHPSESSID' => 'csqp0m17v1nmctoqd5kuoesbu0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/dhdc2/frontend/web/index.php?r=mymod%2Fdefault%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6,de;q=0.4,es;q=0.2,fr;q=0.2,nl;q=0.2,th;q=0.2,vi;q=0.2'
+    'HTTP_COOKIE' => '_ga=GA1.1.1994098876.1441696924; HstCfa3456534=1463643891251; HstCmu3456534=1463643891251; HstCla3456534=1464714323434; HstPn3456534=19; HstPt3456534=254; HstCnv3456534=4; HstCns3456534=5; _locale=60ae3f0abd5e5683db2df8e9156d4f5c6f45d5d6a6591a35bb6aa86ab75f7305a%3A2%3A%7Bi%3A0%3Bs%3A7%3A%22_locale%22%3Bi%3A1%3Bs%3A5%3A%22en-US%22%3B%7D; _csrf=b994249c5c034b6b7671cafb2fe622ca7a5d301afdac6199514472fbdc609eaea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KOBReZv6O6eceaRvpe8tQaPoHrCP8-Dt%22%3B%7D; PHPSESSID=csqp0m17v1nmctoqd5kuoesbu0'
+    'PATH' => 'C:\\Program Files (x86)\\Embarcadero\\Studio\\18.0\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\18.0\\Bpl;C:\\Program Files (x86)\\Embarcadero\\Studio\\18.0\\bin64;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\18.0\\Bpl\\Win64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Users\\utehn\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/dhdc2/frontend/web/index.php'
+    'REMOTE_PORT' => '55369'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mymod%2Fdefault%2Freport1'
+    'REQUEST_URI' => '/dhdc2/frontend/web/index.php?r=mymod%2Fdefault%2Freport1'
+    'SCRIPT_NAME' => '/dhdc2/frontend/web/index.php'
+    'PHP_SELF' => '/dhdc2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481262399.733
+    'REQUEST_TIME' => 1481262399
+]
+2016-12-09 06:46:49 [::1][-][csqp0m17v1nmctoqd5kuoesbu0][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'ไม่ได้รับอนุญาต' in D:\xampp\htdocs\dhdc2\common\components\AppController.php:50
+Stack trace:
+#0 D:\xampp\htdocs\dhdc2\frontend\modules\mymod\controllers\DefaultController.php(16): common\components\AppController->permitRole(Array)
+#1 [internal function]: frontend\modules\mymod\controllers\DefaultController->actionReport1()
+#2 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('report1', Array)
+#5 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('mymod/default/r...', Array)
+#6 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\dhdc2\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-12-09 06:46:49 [::1][-][csqp0m17v1nmctoqd5kuoesbu0][info][application] $_GET = [
+    'r' => 'mymod/default/report1'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1994098876.1441696924'
+    'HstCfa3456534' => '1463643891251'
+    'HstCmu3456534' => '1463643891251'
+    'HstCla3456534' => '1464714323434'
+    'HstPn3456534' => '19'
+    'HstPt3456534' => '254'
+    'HstCnv3456534' => '4'
+    'HstCns3456534' => '5'
+    '_locale' => '60ae3f0abd5e5683db2df8e9156d4f5c6f45d5d6a6591a35bb6aa86ab75f7305a:2:{i:0;s:7:\"_locale\";i:1;s:5:\"en-US\";}'
+    '_csrf' => 'b994249c5c034b6b7671cafb2fe622ca7a5d301afdac6199514472fbdc609eaea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KOBReZv6O6eceaRvpe8tQaPoHrCP8-Dt\";}'
+    'PHPSESSID' => 'csqp0m17v1nmctoqd5kuoesbu0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/dhdc2/frontend/web/index.php?r=mymod%2Fdefault%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6,de;q=0.4,es;q=0.2,fr;q=0.2,nl;q=0.2,th;q=0.2,vi;q=0.2'
+    'HTTP_COOKIE' => '_ga=GA1.1.1994098876.1441696924; HstCfa3456534=1463643891251; HstCmu3456534=1463643891251; HstCla3456534=1464714323434; HstPn3456534=19; HstPt3456534=254; HstCnv3456534=4; HstCns3456534=5; _locale=60ae3f0abd5e5683db2df8e9156d4f5c6f45d5d6a6591a35bb6aa86ab75f7305a%3A2%3A%7Bi%3A0%3Bs%3A7%3A%22_locale%22%3Bi%3A1%3Bs%3A5%3A%22en-US%22%3B%7D; _csrf=b994249c5c034b6b7671cafb2fe622ca7a5d301afdac6199514472fbdc609eaea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KOBReZv6O6eceaRvpe8tQaPoHrCP8-Dt%22%3B%7D; PHPSESSID=csqp0m17v1nmctoqd5kuoesbu0'
+    'PATH' => 'C:\\Program Files (x86)\\Embarcadero\\Studio\\18.0\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\18.0\\Bpl;C:\\Program Files (x86)\\Embarcadero\\Studio\\18.0\\bin64;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\18.0\\Bpl\\Win64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Users\\utehn\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/dhdc2/frontend/web/index.php'
+    'REMOTE_PORT' => '55372'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mymod%2Fdefault%2Freport1'
+    'REQUEST_URI' => '/dhdc2/frontend/web/index.php?r=mymod%2Fdefault%2Freport1'
+    'SCRIPT_NAME' => '/dhdc2/frontend/web/index.php'
+    'PHP_SELF' => '/dhdc2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481262409.653
+    'REQUEST_TIME' => 1481262409
+]
+2016-12-09 06:47:40 [::1][2][vd6pkk1e3hf0qcp0q51re50pg4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'ไม่ได้รับอนุญาต' in D:\xampp\htdocs\dhdc2\common\components\AppController.php:50
+Stack trace:
+#0 D:\xampp\htdocs\dhdc2\frontend\modules\mymod\controllers\DefaultController.php(16): common\components\AppController->permitRole(Array)
+#1 [internal function]: frontend\modules\mymod\controllers\DefaultController->actionReport1()
+#2 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('report1', Array)
+#5 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('mymod/default/r...', Array)
+#6 D:\xampp\htdocs\dhdc2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\dhdc2\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-12-09 06:47:40 [::1][2][vd6pkk1e3hf0qcp0q51re50pg4][info][application] $_GET = [
+    'r' => 'mymod/default/report1'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1994098876.1441696924'
+    'HstCfa3456534' => '1463643891251'
+    'HstCmu3456534' => '1463643891251'
+    'HstCla3456534' => '1464714323434'
+    'HstPn3456534' => '19'
+    'HstPt3456534' => '254'
+    'HstCnv3456534' => '4'
+    'HstCns3456534' => '5'
+    '_locale' => '60ae3f0abd5e5683db2df8e9156d4f5c6f45d5d6a6591a35bb6aa86ab75f7305a:2:{i:0;s:7:\"_locale\";i:1;s:5:\"en-US\";}'
+    '_csrf' => 'b994249c5c034b6b7671cafb2fe622ca7a5d301afdac6199514472fbdc609eaea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KOBReZv6O6eceaRvpe8tQaPoHrCP8-Dt\";}'
+    'PHPSESSID' => 'vd6pkk1e3hf0qcp0q51re50pg4'
+    '_identity' => '0443db61f26c2d97683603517561de033733a2b93e45d63bc9593398b3274dd8a:2:{i:0;s:9:\"_identity\";i:1;s:44:\"[2,\"6mTS6EW1ssxBL_RUbnFqzUtm35fzrUaA\",86400]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/dhdc2/frontend/web/index.php?r=mymod%2Fdefault%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ar;q=0.6,de;q=0.4,es;q=0.2,fr;q=0.2,nl;q=0.2,th;q=0.2,vi;q=0.2'
+    'HTTP_COOKIE' => '_ga=GA1.1.1994098876.1441696924; HstCfa3456534=1463643891251; HstCmu3456534=1463643891251; HstCla3456534=1464714323434; HstPn3456534=19; HstPt3456534=254; HstCnv3456534=4; HstCns3456534=5; _locale=60ae3f0abd5e5683db2df8e9156d4f5c6f45d5d6a6591a35bb6aa86ab75f7305a%3A2%3A%7Bi%3A0%3Bs%3A7%3A%22_locale%22%3Bi%3A1%3Bs%3A5%3A%22en-US%22%3B%7D; _csrf=b994249c5c034b6b7671cafb2fe622ca7a5d301afdac6199514472fbdc609eaea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KOBReZv6O6eceaRvpe8tQaPoHrCP8-Dt%22%3B%7D; PHPSESSID=vd6pkk1e3hf0qcp0q51re50pg4; _identity=0443db61f26c2d97683603517561de033733a2b93e45d63bc9593398b3274dd8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A44%3A%22%5B2%2C%226mTS6EW1ssxBL_RUbnFqzUtm35fzrUaA%22%2C86400%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Embarcadero\\Studio\\18.0\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\18.0\\Bpl;C:\\Program Files (x86)\\Embarcadero\\Studio\\18.0\\bin64;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\18.0\\Bpl\\Win64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Users\\utehn\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/dhdc2/frontend/web/index.php'
+    'REMOTE_PORT' => '55383'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=mymod%2Fdefault%2Freport1'
+    'REQUEST_URI' => '/dhdc2/frontend/web/index.php?r=mymod%2Fdefault%2Freport1'
+    'SCRIPT_NAME' => '/dhdc2/frontend/web/index.php'
+    'PHP_SELF' => '/dhdc2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481262460.639
+    'REQUEST_TIME' => 1481262460
+]
