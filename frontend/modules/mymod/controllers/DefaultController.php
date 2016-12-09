@@ -62,6 +62,38 @@ GROUP BY h.hoscode ";
         
     }
     
+    public function actionMap(){
+        $this->permitRole([1,2]);
+        
+        $sql = " SELECT * from home t
+WHERE t.LATITUDE > 0 AND t.LONGITUDE > 0 ";
+        
+        $raw = \Yii::$app->db->createCommand($sql)->queryAll();
+        
+          $home_json = [];
+        foreach ($raw as $value) {
+            $home_json[] = [
+                'type' => 'Feature',
+                'properties' => [
+                    'HOUSE' => $value['HOUSE'],
+                    'VILLAGE' => $value['VILLAGE'],
+                    //'SEARCH_TEXT' => $value['HOUSE']
+                ],
+                'geometry' => [
+                    'type' => 'Point',
+                    'coordinates' => [$value['LONGITUDE'] * 1, $value['LATITUDE'] * 1],
+                ]
+            ];
+        }
+        $home_json = json_encode($home_json);
+        
+        return $this->render('map',[
+            'home_json'=>$home_json
+        ]);;
+        
+        
+    }
+    
     
     
 }
